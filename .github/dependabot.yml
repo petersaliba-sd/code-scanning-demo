@@ -1,25 +1,42 @@
 ---
 version: 2
-groups:
-  security-batch:
-    applies-to: "security-updates"
-  versioning-batch:
-    applies-to: "version-updates"
+
 
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      security-batch:
+        applies-to: "security-updates"
+      versioning-batch:
+        applies-to: "version-updates"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
       interval: "weekly"
+    groups:
+      security-batch:
+        applies-to: "security-updates"
+      versioning-batch:
+        applies-to: "version-updates"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
       interval: "weekly"
+    groups:
+    security-batch:
+      applies-to: "security-updates"
+    versioning-batch:
+      applies-to: "version-updates"
   - package-ecosystem: pip
     directory: "/python"
     schedule: 
       interval: "weekly"
+    groups:
+      security-batch:
+        applies-to: "security-updates"
+      versioning-batch:
+        applies-to: "version-updates"
+        
