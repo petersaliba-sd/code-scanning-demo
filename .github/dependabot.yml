@@ -5,10 +5,12 @@ version: 2
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
+    dependency-type: "direct"
     schedule:
       interval: "weekly"
   - package-ecosystem: npm
     directory: "/javascript"
+    dependency-type: "direct"
     schedule:
       interval: "weekly"
     groups:
@@ -18,10 +20,12 @@ updates:
           - "*"
   - package-ecosystem: bundler
     directory: "/ruby"
+    dependency-type: "direct"
     schedule:
       interval: "weekly"
   - package-ecosystem: pip
     directory: "/python"
+    dependency-type: "direct"
     schedule: 
       interval: "weekly"
     groups:
