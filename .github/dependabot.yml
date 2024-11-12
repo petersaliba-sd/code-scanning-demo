@@ -14,7 +14,8 @@ updates:
     groups:
       versioning-npm-batch:
         applies-to: "version-updates"
-        patterns: "*"
+        patterns: 
+          - "*"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
@@ -26,5 +27,6 @@ updates:
     groups:
       versioning-pip-batch:
         applies-to: "version-updates"
-        patterns: "*"
+        patterns: 
+          - "*"
         
