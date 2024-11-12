@@ -1,5 +1,11 @@
 ---
 version: 2
+groups:
+  security-batch:
+    applies-to: "security-updates"
+  versioning-batch:
+    applies-to: "version-updates"
+
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
