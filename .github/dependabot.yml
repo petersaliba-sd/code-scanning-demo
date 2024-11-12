@@ -7,36 +7,22 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    groups:
-      security-batch:
-        applies-to: "security-updates"
-      versioning-batch:
-        applies-to: "version-updates"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
       interval: "weekly"
     groups:
-      security-batch:
-        applies-to: "security-updates"
-      versioning-batch:
+      versioning-npm-batch:
         applies-to: "version-updates"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
       interval: "weekly"
-    groups:
-    security-batch:
-      applies-to: "security-updates"
-    versioning-batch:
-      applies-to: "version-updates"
   - package-ecosystem: pip
     directory: "/python"
     schedule: 
       interval: "weekly"
     groups:
-      security-batch:
-        applies-to: "security-updates"
-      versioning-batch:
+      versioning-pip-batch:
         applies-to: "version-updates"
         
